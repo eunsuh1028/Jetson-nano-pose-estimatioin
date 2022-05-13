@@ -1,1 +1,2 @@
-Jetson nano setting
+##Jetson nano setting
+https://developer.nvidia.com/embedded/jetpack#install
