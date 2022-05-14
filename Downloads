@@ -7,10 +7,13 @@ writing image to micro sd card using etcher (관리자 권한 실행, 30분 소�
 
 ##😃Jetson nano
 password : JET0000
-cuda 10.2
+cuda 10.2.300
 cudnn 8.2.1
 python 3.6.9
 opencv 4.5.4 with CUDA
+pytorch
+torch
+
 
 >>connecting wifi
 
