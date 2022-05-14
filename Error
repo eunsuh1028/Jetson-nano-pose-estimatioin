@@ -1,9 +1,9 @@
 ERROR CODE 및 해결 CODE 입력 바람
 
 >>❌ERROR CODE
-~~~
+Illegal instrction(core dumped)
 >>✅해결 CODE
-~~~
+export OPENBLAS_CORETYPE=ARMV8 python
 
 >>❌ERROR CODE
 ~~~
