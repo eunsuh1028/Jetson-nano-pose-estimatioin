@@ -1,12 +1,14 @@
 ##😃Jetson nano setting
 https://ropiens.tistory.com/87
 
-downloading jetson nano sd card image(1시간 소요) developer.nvidia.com/jetson-nano-sd-card-image
+>>downloading jetson nano sd card image(1시간 소요) developer.nvidia.com/jetson-nano-sd-card-image
 sd card format
 writing image to micro sd card using etcher (관리자 권한 실행, 30분 소요) https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
 
 ##😃Jetson nano
 password : JET0000
+
+>>connecting wifi
 
 >>jtop
 $ sudo apt-get update
@@ -16,3 +18,24 @@ $ sudo -H pip3 install jetson-stats
 $ jetson_release
 $ sudo reboot
 
+>>ram 
+$ sudo apt-get install lightdm
+$ sudo apt-get purge gdm3 (Y 입력)
+$ sudo apt-get install nano
+
+>>swap
+$ sudo apt-get install dphys-swapfile (Y 입력)
+$ sudo apt-get install dphys-swapfile
+
+# CONF_SWAPSIZE=4096
+# CONF_SWAPFACTOR=2
+# CONF_MAXSWAP=4096
+ 
+$ sudo nano /sbin/dphys-swapfile
+# [Ctrl] + [X], [y], [Enter]
+$ sudo nano /etc/dphys-swapfile
+# [Ctrl] + [X], [y], [Enter]
+$sudo reboot
+
+>>cuda & cudnn 확인
+$ 
