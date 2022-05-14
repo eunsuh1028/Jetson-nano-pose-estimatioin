@@ -38,4 +38,15 @@ $ sudo nano /etc/dphys-swapfile
 $sudo reboot
 
 >>cuda & cudnn 확인
-$ 
+$ cat /usr/local/cuda/version.txt
+CUDA Version 10.2.300
+$ cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+
+#define CUDNN_MAJOR 8
+#define CUDNN_MINOR 2
+#define CUDNN_PATCHLEVEL 1
+--
+#define CUDNN_VERSION (CUDNN_MAJOR * 1000 + CUDNN_MINOR * 100 + CUDNN_PATCHLEVEL)
+#endif /* CUDNN_VERSION_H */
+
+
