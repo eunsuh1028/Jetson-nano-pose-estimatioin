@@ -1,6 +1,18 @@
-##Jetson nano setting
+##😃Jetson nano setting
 https://ropiens.tistory.com/87
 
-developer.nvidia.com/jetson-nano-sd-card-image (1시간 소요)
+downloading jetson nano sd card image(1시간 소요) developer.nvidia.com/jetson-nano-sd-card-image
 sd card format
-writing image to micro sd card using etcher (관리자 권한 실행, 10분 소요)
+writing image to micro sd card using etcher (관리자 권한 실행, 30분 소요) https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
+
+##😃Jetson nano
+password : JET0000
+
+>>jtop
+$ sudo apt-get update
+$ sudo apt-get upgrade (Y 입력)
+$ sudo apt-get install python3-pip (Y 입력)
+$ sudo -H pip3 install jetson-stats 
+$ jetson_release
+$ sudo reboot
+
