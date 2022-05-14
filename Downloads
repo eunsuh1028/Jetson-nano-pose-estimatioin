@@ -85,4 +85,6 @@ $ export BUILD_VERSION=0.9.0
 $ python3 setup.py install --user
 $ cd ../  # attempting to load torchvision from build dir will result in import error
 
+>> Downloading Yolov5
+
 
