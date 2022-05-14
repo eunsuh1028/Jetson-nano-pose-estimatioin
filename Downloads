@@ -1,4 +1,6 @@
 ##Jetson nano setting
 https://ropiens.tistory.com/87
 
-developer.nvidia.com/jetson-nano-sd-card-image
+developer.nvidia.com/jetson-nano-sd-card-image (1시간 소요)
+sd card format
+writing image to micro sd card using etcher (관리자 권한 실행, 10분 소요)
