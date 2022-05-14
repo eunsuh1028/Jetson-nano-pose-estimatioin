@@ -87,4 +87,7 @@ $ cd ../  # attempting to load torchvision from build dir will result in import 
 
 >> Downloading Yolov5
 
+$ pip3 install chainer==7.8.0
+$ pip3 install pillow==7.1.2
+
 
