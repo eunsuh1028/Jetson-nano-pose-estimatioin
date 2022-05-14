@@ -61,6 +61,23 @@ $ cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 >>opencv
 $ wget https://github.com/Qengineering/Install-OpenCV-Jetson-Nano/raw/main/OpenCV-4-5-4.sh
 $ sudo chmod 755 ./OpenCV-4-5-4.sh
-$ ./OpenCV-4-5-4.sh
+$ ./OpenCV-4-5-4.sh (3시간 소요, 마지막 password 입력)
+$ rm OpenCV-4-5-4.sh
+
+>>PyTorch 1.8 + torchvision v0.9.0
+$ wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+$ sudo apt-get install python3-pip libopenblas-base libopenmpi-dev 
+ 
+# Cython, numpy, pytorch 설치
+$ pip3 install Cython
+$ pip3 install numpy torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+ 
+# torchvision dependencies 설치
+$ sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+$ git clone --branch v0.9.0 https://github.com/pytorch/vision torchvision
+$ cd torchvision
+$ export BUILD_VERSION=0.9.0
+$ python3 setup.py install --user
+$ cd ../  # attempting to load torchvision from build dir will result in import error
 
 
