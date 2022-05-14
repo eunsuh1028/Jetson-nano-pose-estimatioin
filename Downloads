@@ -7,14 +7,20 @@ writing image to micro sd card using etcher (관리자 권한 실행, 30분 소�
 
 ##😃Jetson nano
 password : JET0000
+cuda 10.2
+cudnn 8.2.1
+python 3.6.9
+opencv 4.5.4 with CUDA
 
 >>connecting wifi
 
 >>jtop
 $ sudo apt-get update
 $ sudo apt-get upgrade (Y 입력)
+$ sudo apt-get install python-pip (Y 입력)
 $ sudo apt-get install python3-pip (Y 입력)
 $ sudo -H pip3 install jetson-stats 
+$ sudo pip3 install -U pip testresources setuptools==49.6.0
 $ jetson_release
 $ sudo reboot
 
@@ -48,5 +54,10 @@ $ cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 --
 #define CUDNN_VERSION (CUDNN_MAJOR * 1000 + CUDNN_MINOR * 100 + CUDNN_PATCHLEVEL)
 #endif /* CUDNN_VERSION_H */
+
+>>opencv
+$ wget https://github.com/Qengineering/Install-OpenCV-Jetson-Nano/raw/main/OpenCV-4-5-4.sh
+$ sudo chmod 755 ./OpenCV-4-5-4.sh
+$ ./OpenCV-4-5-4.sh
 
 
