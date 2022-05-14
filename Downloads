@@ -11,8 +11,10 @@ cuda 10.2.300
 cudnn 8.2.1
 python 3.6.9
 opencv 4.5.4 with CUDA
-pytorch
-torch
+pytorch  1.8
+torch 0.9.0
+cupy 9.1.0
+chainer 7.8.0
 
 
 >>connecting wifi
